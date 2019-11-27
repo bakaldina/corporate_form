@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Corporate</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Montserrat:400,500,600,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Montserrat:400,500,600,700&display=swap&subset=cyrillic-ext"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <main class="corporate container">
         <section class="corporate-logo">
@@ -17,7 +20,9 @@
         <section class="corporate-form">
             <div class="corporate-form-item">
                 <h1 class="title">
-                    Регистрация <br> <span class="subtitle">корпоративного кабинета</span>
+                    Регистрация
+                    <br>
+                    <span class="subtitle">корпоративного кабинета</span>
                 </h1>
                 <form action="" id="contact_form" method="post">
 
@@ -25,7 +30,8 @@
 
                     <fieldset class="active">
                         <div class="form-group">
-                            <input type="text" data-valid data-error-empty="Поле должно быть заполнено" class="form-control" id="name" name="name" placeholder="Имя" required>
+                            <input type="text" data-valid data-error-empty="Поле должно быть заполнено" class="form-control" id="name" name="name" placeholder="Имя"
+                                required>
                         </div>
                         <div class="form-group select-wrapper">
                             <select class="selectpicker city-select form-control" name="city" placeholder="Город" required>
@@ -36,10 +42,11 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <input type="tel" data-valid data-error-empty="Поле должно быть заполнено"  class="form-control" id="phone" placeholder="Телефон" required>
+                            <input type="tel" data-valid data-error-empty="Поле должно быть заполнено" class="form-control" id="phone" placeholder="Телефон"
+                                required>
                         </div>
                         <div class="form-group">
-                           <input type="submit" class="btn btn-style btn-block" value="Выслать код" disabled="disabled">
+                            <input type="submit" class="btn btn-style btn-block" value="Выслать код" disabled="disabled">
                         </div>
 
 
@@ -57,36 +64,40 @@
 
                     <!--выбор регистрации-->
 
-                    <fieldset class="">
+                    <fieldset class="active">
                         <div class="registration-type border-block">
                             <div class="radio">
                                 <label>
-                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
-                                    Быстрая регистрация<br>
-                                   <span class="">согласие с <a class="orange" href="#">Офертой</a></span>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"> Быстрая регистрация
+                                    <br>
+                                    <span class="">согласие с
+                                        <a class="orange" href="#">Офертой</a>
+                                    </span>
                                 </label>
                             </div>
                             <div class="radio">
                                 <label>
-                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                                    Медленная регистрация <br>
-                                   <span>подписание Договора</span>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> Медленная регистрация
+                                    <br>
+                                    <span>подписание Договора</span>
                                 </label>
                             </div>
                             <div class="registration-type-text">
-                                Более <b>90%</b> клиентов выбирают быструю регистрацию и экономят время
+                                Более
+                                <b>90%</b> клиентов выбирают быструю регистрацию и экономят время
                             </div>
                         </div>
                     </fieldset>
 
                     <!--быстрая регистрация-->
 
-                    <fieldset class="">
+                    <fieldset class="active">
                         <div class="registration_quick">
                             <ol>
                                 <li>
                                     <span>
-                                        Согласием (акцептом) с <a class="orange" href="#">Офертой</a> является оплата счёта авансового оказания услуг
+                                        Согласием (акцептом) с
+                                        <a class="orange" href="#">Офертой</a> является оплата счёта авансового оказания услуг
                                     </span>
                                 </li>
                                 <li>
@@ -96,10 +107,12 @@
                                 </li>
                             </ol>
                             <div class="form-group">
-                                <input type="email" data-valid data-test="email" data-error-empty="Поле должно быть заполнено" data-error-input="Поле заполнено неправильно" class="form-control" id="email" name="email" placeholder="E-mail" required>
+                                <input type="email" data-valid data-test="email" data-error-empty="Поле должно быть заполнено" data-error-input="Поле заполнено неправильно"
+                                    class="form-control" id="email" name="email" placeholder="E-mail" required>
                             </div>
                             <div class="form-group">
-                                <input type="number" data-valid data-error-empty="Поле должно быть заполнено" class="form-control" id="inn" name="inn" placeholder="ИНН" required>
+                                <input type="number" data-valid data-error-empty="Поле должно быть заполнено" class="form-control" id="inn" name="inn" placeholder="ИНН"
+                                    required>
                             </div>
                             <div class="form-group select-wrapper">
                                 <select class="selectpicker city-select form-control" name="ownership_type" placeholder="Форма собственности" required>
@@ -117,19 +130,23 @@
                                 <input type="text" class="form-control" id="company_kpp" name="company_kpp" placeholder="КПП" readonly>
                             </div>
                             <div class="form-group">
-                                <input type="number" data-valid data-error-empty="Поле должно быть заполнено" class="form-control" id="bik" name="bik" placeholder="БИК" required>
+                                <input type="number" data-valid data-error-empty="Поле должно быть заполнено" class="form-control" id="bik" name="bik" placeholder="БИК"
+                                    required>
                             </div>
                             <div class="form-group">
                                 <input type="text" class="form-control" id="company_bank" name="company_bank" placeholder="Банк" readonly>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" id="correspondent_account" name="correspondent_account" placeholder="Корреспонденский счет" readonly>
+                                <input type="text" class="form-control" id="correspondent_account" name="correspondent_account" placeholder="Корреспонденский счет"
+                                    readonly>
                             </div>
                             <div class="form-group">
-                                <input type="text" data-valid data-error-empty="Поле должно быть заполнено" class="form-control" id="payment_account" name="payment_account" placeholder="Расчетный счет" required>
+                                <input type="text" data-valid data-error-empty="Поле должно быть заполнено" class="form-control" id="payment_account" name="payment_account"
+                                    placeholder="Расчетный счет" required>
                             </div>
                             <div class="form-group">
-                                <input type="number" data-valid data-error-empty="Поле должно быть заполнено" class="form-control" id="amount" name="amount" placeholder="Сумма" required>
+                                <input type="number" data-valid data-error-empty="Поле должно быть заполнено" class="form-control" id="amount" name="amount"
+                                    placeholder="Сумма" required>
                             </div>
                             <div class="form-group">
                                 <input type="submit" class="btn btn-style btn-block" value="Далее" disabled="disabled">
@@ -139,10 +156,11 @@
 
                     <!--корп кабинет создан-->
 
-                    <fieldset class="">
+                    <fieldset class="active">
                         <div class="billing-screen">
                             <div class="border-block">
-                                <h1 class="title title">Корпоративный <br>кабинет создан</h1>
+                                <h1 class="title title">Корпоративный
+                                    <br>кабинет создан</h1>
                                 <div class="billing-screen-text">для начала работы оплатите счёт</div>
                             </div>
                             <div class="form-group">
@@ -156,22 +174,24 @@
 
                     <!--успешная регистрация-->
 
-                    <fieldset class="">
+                    <fieldset class="active">
                         <div class="success-screen">
                             <img src="img/success.svg" alt="Успешно">
-                            <h1 class="title">Благодарим<br> за регистрацию</h1>
+                            <h1 class="title">Благодарим
+                                <br> за регистрацию</h1>
                             <div class="success-screen-text">Наш менеджер скоро свяжется с вами</div>
                         </div>
                     </fieldset>
 
                     <!--медленная регистрация-->
 
-                    <fieldset class="">
+                    <fieldset class="active">
                         <div class="registration_slow">
                             <div class="border-block">
                                 <h2>Вы уверены?</h2>
                                 <div class="registration_slow-text">
-                                    Подписание договора занимает продолжительное время.<br>
+                                    Подписание договора занимает продолжительное время.
+                                    <br>
                                     <a class="orange" href="#">Оферта</a> является быстрым и полностью прозрачным способом взаимодействия
                                 </div>
                             </div>
@@ -193,4 +213,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
     <script src="js/script.js"></script>
 </body>
+
 </html>

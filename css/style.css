@@ -80,15 +80,18 @@ input[type=number]::-webkit-outer-spin-button {
     max-width: 534px;
     border-radius: 20px;
     padding: 25px 43px 23px 43px;
+    margin-bottom: 40px
+}
+
+.form-group {
+    margin-bottom: 18px
 }
 
 .form-control {
-    /* height: 42px; */
     height: 70px;
     font-size: 18px;
     border: 0.8px solid #C2C2C2;
-    box-shadow: none;
-    margin-bottom: 18px;
+    box-shadow: none !important;
     border-radius: 10px;
 }
 
@@ -207,7 +210,6 @@ li.selected.active:focus {
 }
 
 .btn-style {
-    /* height: 42px; */
     height: 70px;
     background-color: #7000FF;
     border-radius: 10px;
@@ -215,6 +217,16 @@ li.selected.active:focus {
     font-size: 18px;
     font-size: 22px;
     color: #fff;
+}
+
+.btn-style:hover,
+.btn-style:focus {
+    color: #fff;
+    filter: brightness(0.9);
+}
+
+.btn-style:focus {
+    outline: none
 }
 
 .billing-screen .btn-style:hover,
@@ -230,18 +242,23 @@ li.selected.active:focus {
 
 .billing-screen .btn-default,
 .success-screen .btn-default {
-    background-color: #FFF;
-    border: 0.8px solid #7000FF;
-    color: #7000FF;
+    color: #fff;
+    filter: brightness(0.9);
 }
 
 .has-success .form-control {
     border-color: #7000FF;
+    background-color: #fff;
+    box-shadow: none !important;
 }
 
 .has-success .form-control:focus {
     border-color: #7000FF;
     box-shadow: none;
+}
+
+.select-wrapper.has-success .btn-default {
+    border-color: #7000FF;
 }
 
 .has-error .form-control:focus {
@@ -260,8 +277,11 @@ li.selected.active:focus {
     font-size: 14px;
     color: #E6393D;
     text-align: left;
-    margin-top: -10px;
     padding-left: 5px;
+}
+
+.select-wrapper.has-error .btn-default {
+    border-color: #E6393D;
 }
 
 #success_message {
@@ -276,12 +296,13 @@ li.selected.active:focus {
 }
 
 .code_refresh-text {
-    color: #CECECE;
+    color: #000;
     font-size: 14px;
     margin: 0;
     background-color: #fff;
     border: none;
     padding: 0;
+    cursor: pointer
 }
 
 button.code_refresh-text.active {
@@ -392,6 +413,7 @@ fieldset.active {
 .success-screen-text {
     font-size: 18px;
     margin-bottom: 40px;
+    color: #908E98;
 }
 
 .registration_slow .border-block {
@@ -409,4 +431,53 @@ h2 {
 .registration_slow-text {
     font-size: 16px;
     font-weight: 300;
+}
+
+input[type='radio'],
+label {
+    cursor: pointer;
+}
+
+input[type='radio'] {
+    position: relative;
+    height: 22px;
+    width: 22px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+}
+
+input[type='radio']::before {
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: 7px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #908E98;
+}
+
+input[type='radio']:checked::before {
+    border: 1px solid #7000FF;
+}
+
+input[type='radio']:checked::after {
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: 7px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #7000FF;
+    transform: translate(-50%, -50%);
+    visibility: visible;
+}
+
+input[type='radio']:focus {
+    outline: none
 }
